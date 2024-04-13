@@ -1,8 +1,7 @@
 module.exports = {
     configureWebpack: {
-        // transpileDependencies: true,
         resolve: {
-            // 起别名-->省略././
+            // 起别名-->省略‘././’的路径
             alias: {
                 // 默认已经有了'@' :resolve（'src'）
                 'assets': '@/assets',
@@ -14,6 +13,8 @@ module.exports = {
         },
     },
     lintOnSave: false,
+
+    // 引用swiper的配置
     devServer: {
         host: '0.0.0.0',
         // https:true,
